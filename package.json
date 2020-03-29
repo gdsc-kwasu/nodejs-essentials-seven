@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-essentials-seven",
+  "version": "1.0.0",
+  "description": "A simple development environment with nodejs, with tools to assist software developers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwasu-ng/nodejs-essentials-seven.git"
+  },
+  "author": "Caleb Olojo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwasu-ng/nodejs-essentials-seven/issues"
+  },
+  "homepage": "https://github.com/kwasu-ng/nodejs-essentials-seven#readme",
+  "dependencies": {
+    "eslint": "^6.8.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.2"
+  }
+}
