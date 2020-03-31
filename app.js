@@ -1,8 +1,8 @@
 // Code goes here...
 const unoderedCapitalize = (word) => {
-    let result = '' //stores the string
+    let result = '' // stores the string
 
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; i++) { // (no-plusplus)
         // condition for the string capitalization, when the indexing is either odd or even
         if (i % 2 !== 0) {
             result += word[i].toLowerCase()
@@ -13,8 +13,7 @@ const unoderedCapitalize = (word) => {
     return result
 }
 
-let yourName = 'ionwarez'
+const yourName = 'ionwarez'
 console.log(unoderedCapitalize(yourName))
-
 
 
