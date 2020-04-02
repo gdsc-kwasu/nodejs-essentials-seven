@@ -4,7 +4,9 @@
   "description": "A simple development environment with nodejs, with tools to assist software developers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"*.js\"",
+    "lint": "eslint \"*.js\" --quiet --fix"
   },
   "repository": {
     "type": "git",
@@ -16,13 +18,14 @@
     "url": "https://github.com/kwasu-ng/nodejs-essentials-seven/issues"
   },
   "homepage": "https://github.com/kwasu-ng/nodejs-essentials-seven#readme",
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-prettier": "^3.1.2"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^2.0.2"
   }
 }

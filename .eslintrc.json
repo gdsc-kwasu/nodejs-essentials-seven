@@ -1,18 +1,27 @@
 {
     "extends": [
-        "airbnb-base", 
+        "airbnb-base",
         "prettier",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "eslint:recommended",
+        "pluggin:prettier/recommended"
     ],
-    "plugins": [
-        "prettier"
-    ],
+    "plugins": ["prettier"],
+    "parserOptions": { "ecmaVersion": 2018 },
+    "env": {
+        "es6": true,
+        "node": true
+    },
     "rules": {
         "prettier": true,
         "error": {
             "allowForLoopAfterthoughts": true,
-            "no-console": "on",
-            "prettier/prettier": "error"
+            "no-console": "error",
+            "prettier/prettier": "error",
+            "no-var": "error",
+            "no-plusplus": "error",
+            "no-unused-expressions": "error",
+            "semi": "error"
         }
     }
 }
