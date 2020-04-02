@@ -1,19 +1,20 @@
 // Code goes here...
-const unoderedCapitalize = (word) => {
-    let result = '' // stores the string
+const Capitalize = (word) => {
+    const split = word.split('') // separates elements (letters) in the word
+    
+    let firstWord = split.map((a, arrIndex) => 
+        arrIndex % 2 === 0 ?
+        a.toUpperCase() // capitalizes the "even" indexes of the array
+        : a
+    )
 
-    for (let i = 0; i < word.length; i++) { // (no-plusplus)
-        // condition for the string capitalization, when the indexing is either odd or even
-        if (i % 2 !== 0) {
-            result += word[i].toLowerCase()
-        } else {
-            result += word[i].toUpperCase()
-        }
-    }
-    return result
+    let secondWord = split.map((a, arrIndex) =>  // creates a new array
+        arrIndex % 2 !== 0 ? 
+        a.toUpperCase() // capitalizes the "odd" indexes of the array
+        : a
+    )
+    
+    return [firstWord.join(''), secondWord.join('')]
 }
 
-const yourName = 'ionwarez'
-console.log(unoderedCapitalize(yourName))
-
-
+console.log(Capitalize('ionwarez'))

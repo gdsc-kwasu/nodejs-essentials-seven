@@ -1,15 +1,17 @@
 {
     "extends": [
         "airbnb-base", 
-        "prettier"
+        "prettier",
+        "plugin:prettier/recommended"
     ],
     "plugins": [
         "prettier"
     ],
     "rules": {
+        "prettier": true,
         "error": {
             "allowForLoopAfterthoughts": true,
-            "no-console": "off",
+            "no-console": "on",
             "prettier/prettier": "error"
         }
     }
