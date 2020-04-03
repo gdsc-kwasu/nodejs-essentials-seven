@@ -1,31 +1,39 @@
 {
   "name": "nodejs-essentials-seven",
   "version": "1.0.0",
-  "description": "A simple development environment with nodejs, with tools to assist software developers.",
-  "main": "index.js",
+  "description": "A development environment for software engineers with the necessary linting and formatting tools",
+  "main": "app.js",
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"*.js\"",
-    "lint": "eslint \"*.js\" --quiet --fix"
+    "lint": "eslint \"*.js\" --quiet",
+    "format": "prettier \"*.js\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwasu-ng/nodejs-essentials-seven.git"
   },
+  "keywords": [
+    "ESlint",
+    "prettier",
+    "airbnb"
+  ],
   "author": "Caleb Olojo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kwasu-ng/nodejs-essentials-seven/issues"
   },
-  "homepage": "https://github.com/kwasu-ng/nodejs-essentials-seven#readme",
-  "dependencies": {
-    "eslint-plugin-prettier": "^3.1.2"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-import": "^2.20.2",
-    "prettier": "^2.0.2"
-  }
+  "homepage": "https://github.com/kwasu-ng/nodejs-essentials-seven#readme"
 }
