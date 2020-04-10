@@ -1,7 +1,5 @@
 function addNum(n) {
     return n + n
 }
-
-addNum(5)
-
+addNum(10)
 // it Worked!!

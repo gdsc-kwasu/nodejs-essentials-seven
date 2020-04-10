@@ -17,8 +17,8 @@
     "eslint-plugin-react": "^7.19.0"
   },
   "scripts": {
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-    "format": "prettier \"src/**/{*.js,html,css}\" --write",
+    "lint": "eslint \"src/**/*.+(js,jsx)\" --quiet --fix",
+    "format": "prettier \"src/**/*.{js,html,css}\" --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
